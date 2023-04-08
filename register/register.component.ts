@@ -30,12 +30,11 @@ export class RegisterComponent implements OnInit {
         console.log(response);
         // Store the JWT token
         this.authService.setToken(response.token);
-        // Redirect to home page
-        this.router.navigate(['/home']);
+        // Redirect to login page
+        this.router.navigate(['/login']);
       },
       error => {
         console.log(error);
-        // Handle error here
       }
     );
   }

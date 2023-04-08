@@ -44,7 +44,7 @@ export class ShowlistingComponent implements OnInit {
   }
  
   getTvShowsMovies(page: number) {
-    let url = `http://localhost:3000/api/movies?page=${page}&limit=${this.perPage}`;
+    let url = `https://fletnix.onrender.com/api/movies?page=${page}&limit=${this.perPage}`;
 
     if (this.searchTerm) {
       url += `&q=${this.searchTerm}&searchBy=${this.searchBy}`; // Add the searchBy parameter to the URL

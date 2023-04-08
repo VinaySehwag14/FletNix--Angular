@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class TvShowMovieService {
 
-  private tvShowMoviesUrl = 'http://localhost:3000/api/movies';
+  private tvShowMoviesUrl = 'https://fletnix.onrender.com/api/movies';
 
   constructor(private http: HttpClient) { }
 

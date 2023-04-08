@@ -10,7 +10,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  apiurl = "http://localhost:3000/api/";
+  apiurl = "https://fletnix.onrender.com/api/";
 
   login(user: User): Observable<TokenResponse> {
     return this.http.post<TokenResponse>(`${this.apiurl}user/login`, user);
